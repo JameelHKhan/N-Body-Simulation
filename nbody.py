@@ -38,9 +38,8 @@ while t_total < t:
             r[i] = math.sqrt(rSqr[i])
             # calculate pair-wise force between two bodies
             # originally, I did not have the negative sign in this calculation
-            # however my output always came out incorrect. Joe suggested that I
-            # negate my Force value and that seems to fix all of my problems
-            # although I have NO IDEA why that worked...
+            # however my output always came out incorrect. My professor 
+            # suggested that I negate my Force value, which correct my output.
             f[i] = -((G * m[i] * m[3])/rSqr[i])
             # calculate x component of total force
             fx[i] = (px[i]/r[i]) * f[i]
